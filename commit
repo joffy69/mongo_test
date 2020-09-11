@@ -1,0 +1,14 @@
+solver env.py 
+
+import pymongo 
+import os
+from os import path
+if path.exists("env.py"):
+    import env
+MONGODB_URI = os.getenv('MONGODB_URI')
+ 
+env.py
+
+import os
+os.environ['MONGODB_URI'] = "mongodb+srv://root:<passwordhere>@cluster0.ujdbc.mongodb.net/<DBnamehere>?retryWrites=true&w=majority"
+
